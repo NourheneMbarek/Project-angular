@@ -1,0 +1,119 @@
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#e123">
+  Planifier
+</button>
+
+<div class="modal fade" id="e123" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label>Moniteurs</label>
+          <select [(ngModel)]="moniteur" class="form-control">
+            <option value="m1">Moniteur1</option>
+          </select>
+          <label>Voitures</label>
+          <select [(ngModel)]="voiture" class="form-control">
+            <option value="v1">Voiture1</option>
+          </select>
+          <label>Candidats</label>
+          <select [(ngModel)]="candidat" class="form-control">
+            <option value="c1">Candidat1</option>
+          </select>
+          <div class="row col-md-12">
+            <div class="col-md-6">
+              <label>Date</label>
+              <input type="date" [(ngModel)]="date_seance" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label>Heurs</label>
+                <select [(ngModel)]="heur_seance" class="form-control">
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                  </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<table class="table">
+<tr>
+  <th></th>
+  <th>04 - mars</th>
+  <th>05 - mars</th>
+  <th>06 - mars</th>
+  <th>07 - mars</th>
+  <th>08 - mars</th>
+</tr>
+<tr>
+  <td>9h - 10h</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>10h - 11h</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>11h - 12h</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>14h - 15h</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>15h - 16h</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>16h - 17h</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>17h - 18h</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</table>

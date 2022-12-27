@@ -1,0 +1,27 @@
+<div (click)="animate()" >animation</div>
+<div class="col-md-3" [@sidebaranimate]="isOpen ? 'open' : 'closed'" style="
+height: -webkit-fill-available; float:left;background-color : #ddd">
+ 
+  <div class="container"  >
+      <div class="row">
+          Dashboard
+        </div>
+        <hr>
+        <div class="row">
+            Candidats
+        </div>
+        <hr>
+        <div class="row">
+            Offres
+        </div>
+        <hr>
+        <div class="row">
+            Nouveautés
+        </div>
+  </div>
+  
+</div>
+
+<div class="col-md-8" style="float : left">
+  <router-outlet></router-outlet>
+</div>

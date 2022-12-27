@@ -1,0 +1,29 @@
+<input [(ngModel)]="nom">
+<input [(ngModel)]="prenom">
+<button (click)="ajouter()">Add User</button>
+
+<input type="text" (keyup)="search($event.target.value)">
+<br>
+<table class="table" style="width : 70%">
+  <tr>
+    <th>
+     <a (click)="sort()"> Nom </a>
+    </th>
+    <th>
+      Email
+    </th>
+    <th>
+      Actions 
+    </th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.nom}}</td>
+    <td>{{user.prenom}}</td>
+    <td><button class="btn btn-warning">Editer</button>
+      <button class="btn btn-danger" (click)="delete(user)">Supprimer</button>
+    </td>
+  </tr>
+
+
+
+</table>
